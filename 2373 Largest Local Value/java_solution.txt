@@ -1,3 +1,9 @@
+// Runtime
+// Beats 100.00% of users with Java
+
+// Memory
+// Beats 94.44% of users with Java
+
 class Solution {
     public int max(int i,int l,int[][] grid){
         int max=0;

@@ -1,0 +1,23 @@
+// RunTime
+// Beats 96.41%of users with Java
+
+// Memory
+// Beats 89.07%of users with Java
+
+class Solution {
+    public String intToRoman(int num) {
+        String ans="";
+        String[] strArr = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+        int[] intArr = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+        int i=0,t;
+        while(num>0){
+            t = num/intArr[i];
+            while(t-->0){
+                ans+=strArr[i];
+                num-=intArr[i];
+            }
+            i++;
+        }
+        return ans;
+    }
+}
